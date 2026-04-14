@@ -28,7 +28,8 @@ export const useAudio = () => {
   const playMusic = useCallback(() => {
     initAudio()
     if (audioRef.current.music) {
-      audioRef.current.music.play().catch(e => console.log('Music play error:', e))
+      // Для автовоспроизведения в CRA нужен обработчик клика
+      audioRef.current.music.play().catch(e => console.log('Click to play music'))
     }
   }, [initAudio, audioRef])
 
