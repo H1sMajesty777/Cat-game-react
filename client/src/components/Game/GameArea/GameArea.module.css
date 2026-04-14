@@ -1,0 +1,20 @@
+.gameArea {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.basket {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  pointer-events: none;
+}
+
+.basket img {
+  width: auto;
+  height: 120px;
+  image-rendering: pixelated;
+}

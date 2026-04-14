@@ -1,0 +1,23 @@
+.triangles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.triangle {
+  width: 150px;
+  height: 450px;
+  position: absolute;
+  image-rendering: pixelated;
+  transform-origin: 50% 100%;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.even {
+  opacity: 0.8;
+}

@@ -1,0 +1,108 @@
+.catArea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 300px;
+  z-index: 10;
+  user-select: none;
+  image-rendering: pixelated;
+}
+
+.catBody {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.catHead {
+  top: 1%;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.catEyes,
+.catEyesBlink,
+.catEyesPupils {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.catEyesBlink {
+  z-index: 4;
+}
+
+.catEarLeft,
+.catEarRight {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.catEarLeft {
+  transform-origin: bottom right;
+}
+
+.catEarRight {
+  transform-origin: bottom left;
+}
+
+.catMouth {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+}
+
+.catTail {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform-origin: left center;
+}
+
+.headHitbox {
+  position: absolute;
+  z-index: 101;
+  cursor: pointer;
+  top: 15%;
+  left: 28%;
+  width: 40%;
+  height: 20%;
+  border-radius: 100% 100% 40% 40%;
+}
+
+.earHitbox {
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.earHitboxLeft {
+  top: 3%;
+  left: 16%;
+  width: 20%;
+  height: 25%;
+  border-radius: 50% 100% 40% 40%;
+}
+
+.earHitboxRight {
+  top: 3%;
+  right: 19%;
+  width: 20%;
+  height: 25%;
+  border-radius: 100% 50% 40% 40%;
+}
+
+.tailHitbox {
+  position: absolute;
+  z-index: 100;
+  cursor: pointer;
+  top: 60%;
+  right: 5%;
+  width: 20%;
+  height: 35%;
+  border-radius: 100% 50% 40% 40%;
+}

@@ -1,0 +1,34 @@
+.fishPool {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 30px;
+  padding: 20px 40px;
+  z-index: 20;
+  min-width: 300px;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.fish {
+  width: 60px;
+  height: 160px;
+  position: absolute;
+  image-rendering: pixelated;
+  cursor: grab;
+  transform-origin: center;
+  pointer-events: auto;
+  bottom: 0;
+}
+
+.fish:hover {
+  transform: scale(1.2) !important;
+}
+
+.fish.dragging {
+  cursor: grabbing;
+  z-index: 1000 !important;
+  transition: none !important;
+}
